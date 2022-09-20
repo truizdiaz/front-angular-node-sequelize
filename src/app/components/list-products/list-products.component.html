@@ -18,7 +18,7 @@
           <tr *ngFor="let item of listProducts" class="table-active">
             <td>{{ item.name }}</td>
             <td>{{ item.description }}</td>
-            <td>{{ item.price }}</td>
+            <td>{{ item.price | currency }}</td>
             <td>{{ item.stock }}</td>
             <td>
                 <button routerLink="/edit/{{ item.id }}" type="button" class="btn btn-info btn-sm">Edit</button>
